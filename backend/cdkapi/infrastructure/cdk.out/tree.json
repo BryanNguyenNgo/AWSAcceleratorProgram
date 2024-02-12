@@ -1,0 +1,1019 @@
+{
+  "version": "tree-0.1",
+  "tree": {
+    "id": "App",
+    "path": "",
+    "children": {
+      "cdkdemo1": {
+        "id": "cdkdemo1",
+        "path": "cdkdemo1",
+        "children": {
+          "AppTable": {
+            "id": "AppTable",
+            "path": "cdkdemo1/AppTable",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "cdkdemo1/AppTable/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::DynamoDB::Table",
+                  "aws:cdk:cloudformation:props": {
+                    "attributeDefinitions": [
+                      {
+                        "attributeName": "PK",
+                        "attributeType": "S"
+                      },
+                      {
+                        "attributeName": "SK",
+                        "attributeType": "S"
+                      }
+                    ],
+                    "keySchema": [
+                      {
+                        "attributeName": "PK",
+                        "keyType": "HASH"
+                      },
+                      {
+                        "attributeName": "SK",
+                        "keyType": "RANGE"
+                      }
+                    ],
+                    "provisionedThroughput": {
+                      "readCapacityUnits": 5,
+                      "writeCapacityUnits": 5
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.aws_dynamodb.CfnTable",
+                  "version": "2.110.1"
+                }
+              },
+              "ScalingRole": {
+                "id": "ScalingRole",
+                "path": "cdkdemo1/AppTable/ScalingRole",
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.Resource",
+                  "version": "2.110.1"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "aws-cdk-lib.aws_dynamodb.Table",
+              "version": "2.110.1"
+            }
+          },
+          "AppTableName": {
+            "id": "AppTableName",
+            "path": "cdkdemo1/AppTableName",
+            "constructInfo": {
+              "fqn": "aws-cdk-lib.CfnOutput",
+              "version": "2.110.1"
+            }
+          },
+          "OrderTable": {
+            "id": "OrderTable",
+            "path": "cdkdemo1/OrderTable",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "cdkdemo1/OrderTable/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::DynamoDB::Table",
+                  "aws:cdk:cloudformation:props": {
+                    "attributeDefinitions": [
+                      {
+                        "attributeName": "PK",
+                        "attributeType": "S"
+                      },
+                      {
+                        "attributeName": "SK",
+                        "attributeType": "S"
+                      }
+                    ],
+                    "keySchema": [
+                      {
+                        "attributeName": "PK",
+                        "keyType": "HASH"
+                      },
+                      {
+                        "attributeName": "SK",
+                        "keyType": "RANGE"
+                      }
+                    ],
+                    "provisionedThroughput": {
+                      "readCapacityUnits": 5,
+                      "writeCapacityUnits": 5
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.aws_dynamodb.CfnTable",
+                  "version": "2.110.1"
+                }
+              },
+              "ScalingRole": {
+                "id": "ScalingRole",
+                "path": "cdkdemo1/OrderTable/ScalingRole",
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.Resource",
+                  "version": "2.110.1"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "aws-cdk-lib.aws_dynamodb.Table",
+              "version": "2.110.1"
+            }
+          },
+          "OrderTableName": {
+            "id": "OrderTableName",
+            "path": "cdkdemo1/OrderTableName",
+            "constructInfo": {
+              "fqn": "aws-cdk-lib.CfnOutput",
+              "version": "2.110.1"
+            }
+          },
+          "MenuPriceAll": {
+            "id": "MenuPriceAll",
+            "path": "cdkdemo1/MenuPriceAll",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "cdkdemo1/MenuPriceAll/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::DynamoDB::Table",
+                  "aws:cdk:cloudformation:props": {
+                    "attributeDefinitions": [
+                      {
+                        "attributeName": "PK",
+                        "attributeType": "S"
+                      },
+                      {
+                        "attributeName": "SK",
+                        "attributeType": "S"
+                      }
+                    ],
+                    "keySchema": [
+                      {
+                        "attributeName": "PK",
+                        "keyType": "HASH"
+                      },
+                      {
+                        "attributeName": "SK",
+                        "keyType": "RANGE"
+                      }
+                    ],
+                    "provisionedThroughput": {
+                      "readCapacityUnits": 5,
+                      "writeCapacityUnits": 5
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.aws_dynamodb.CfnTable",
+                  "version": "2.110.1"
+                }
+              },
+              "ScalingRole": {
+                "id": "ScalingRole",
+                "path": "cdkdemo1/MenuPriceAll/ScalingRole",
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.Resource",
+                  "version": "2.110.1"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "aws-cdk-lib.aws_dynamodb.Table",
+              "version": "2.110.1"
+            }
+          },
+          "MenuTableName": {
+            "id": "MenuTableName",
+            "path": "cdkdemo1/MenuTableName",
+            "constructInfo": {
+              "fqn": "aws-cdk-lib.CfnOutput",
+              "version": "2.110.1"
+            }
+          },
+          "ChaliceApp": {
+            "id": "ChaliceApp",
+            "path": "cdkdemo1/ChaliceApp",
+            "children": {
+              "ChaliceAppCode": {
+                "id": "ChaliceAppCode",
+                "path": "cdkdemo1/ChaliceApp/ChaliceAppCode",
+                "children": {
+                  "Stage": {
+                    "id": "Stage",
+                    "path": "cdkdemo1/ChaliceApp/ChaliceAppCode/Stage",
+                    "constructInfo": {
+                      "fqn": "aws-cdk-lib.AssetStaging",
+                      "version": "2.110.1"
+                    }
+                  },
+                  "AssetBucket": {
+                    "id": "AssetBucket",
+                    "path": "cdkdemo1/ChaliceApp/ChaliceAppCode/AssetBucket",
+                    "constructInfo": {
+                      "fqn": "aws-cdk-lib.aws_s3.BucketBase",
+                      "version": "2.110.1"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
+                  "version": "2.110.1"
+                }
+              },
+              "ChaliceApp": {
+                "id": "ChaliceApp",
+                "path": "cdkdemo1/ChaliceApp/ChaliceApp",
+                "children": {
+                  "$Mappings": {
+                    "id": "$Mappings",
+                    "path": "cdkdemo1/ChaliceApp/ChaliceApp/$Mappings",
+                    "constructInfo": {
+                      "fqn": "constructs.Construct",
+                      "version": "10.3.0"
+                    }
+                  },
+                  "$Conditions": {
+                    "id": "$Conditions",
+                    "path": "cdkdemo1/ChaliceApp/ChaliceApp/$Conditions",
+                    "constructInfo": {
+                      "fqn": "constructs.Construct",
+                      "version": "10.3.0"
+                    }
+                  },
+                  "$Rules": {
+                    "id": "$Rules",
+                    "path": "cdkdemo1/ChaliceApp/ChaliceApp/$Rules",
+                    "constructInfo": {
+                      "fqn": "constructs.Construct",
+                      "version": "10.3.0"
+                    }
+                  },
+                  "DefaultRole": {
+                    "id": "DefaultRole",
+                    "path": "cdkdemo1/ChaliceApp/ChaliceApp/DefaultRole",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::IAM::Role",
+                      "aws:cdk:cloudformation:props": {
+                        "assumeRolePolicyDocument": {
+                          "Version": "2012-10-17",
+                          "Statement": [
+                            {
+                              "Sid": "",
+                              "Effect": "Allow",
+                              "Principal": {
+                                "Service": "lambda.amazonaws.com"
+                              },
+                              "Action": "sts:AssumeRole"
+                            }
+                          ]
+                        },
+                        "policies": [
+                          {
+                            "policyDocument": {
+                              "Version": "2012-10-17",
+                              "Statement": [
+                                {
+                                  "Effect": "Allow",
+                                  "Action": [
+                                    "logs:CreateLogGroup",
+                                    "logs:CreateLogStream",
+                                    "logs:PutLogEvents"
+                                  ],
+                                  "Resource": "arn:*:logs:*:*:*"
+                                }
+                              ]
+                            },
+                            "policyName": "DefaultRolePolicy"
+                          }
+                        ]
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "aws-cdk-lib.aws_iam.CfnRole",
+                      "version": "2.110.1"
+                    }
+                  },
+                  "APIHandler": {
+                    "id": "APIHandler",
+                    "path": "cdkdemo1/ChaliceApp/ChaliceApp/APIHandler",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::Serverless::Function",
+                      "aws:cdk:cloudformation:props": {
+                        "codeUri": {
+                          "bucket": {
+                            "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
+                          },
+                          "key": "7434f4bed1e4511cb9e2f0f32181200c33a8537d02e5dd68aa506916a8346099.zip"
+                        },
+                        "environment": {
+                          "variables": {
+                            "APP_TABLE_NAME": {
+                              "Ref": "AppTable815C50BC"
+                            },
+                            "ORDER_TABLE_NAME": {
+                              "Ref": "OrderTable416EB896"
+                            },
+                            "MENU_TABLE_NAME": {
+                              "Ref": "MenuPriceAll6E92019B"
+                            }
+                          }
+                        },
+                        "handler": "app.app",
+                        "memorySize": 128,
+                        "role": {
+                          "Fn::GetAtt": [
+                            "DefaultRole",
+                            "Arn"
+                          ]
+                        },
+                        "runtime": "python3.10",
+                        "tags": {
+                          "aws-chalice": "version=1.29.0:stage=cdkdemo1:app=cdkdemo1"
+                        },
+                        "timeout": 60,
+                        "tracing": "PassThrough"
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "aws-cdk-lib.aws_sam.CfnFunction",
+                      "version": "2.110.1"
+                    }
+                  },
+                  "RestAPI": {
+                    "id": "RestAPI",
+                    "path": "cdkdemo1/ChaliceApp/ChaliceApp/RestAPI",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::Serverless::Api",
+                      "aws:cdk:cloudformation:props": {
+                        "definitionBody": {
+                          "swagger": "2.0",
+                          "info": {
+                            "version": "1.0",
+                            "title": "cdkdemo1"
+                          },
+                          "schemes": [
+                            "https"
+                          ],
+                          "paths": {
+                            "/orders": {
+                              "post": {
+                                "consumes": [
+                                  "application/json"
+                                ],
+                                "produces": [
+                                  "application/json"
+                                ],
+                                "responses": {
+                                  "200": {
+                                    "description": "200 response",
+                                    "schema": {
+                                      "$ref": "#/definitions/Empty"
+                                    }
+                                  }
+                                },
+                                "x-amazon-apigateway-integration": {
+                                  "responses": {
+                                    "default": {
+                                      "statusCode": "200"
+                                    }
+                                  },
+                                  "uri": {
+                                    "Fn::Sub": "arn:${AWS::Partition}:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${APIHandler.Arn}/invocations"
+                                  },
+                                  "passthroughBehavior": "when_no_match",
+                                  "httpMethod": "POST",
+                                  "contentHandling": "CONVERT_TO_TEXT",
+                                  "type": "aws_proxy"
+                                }
+                              },
+                              "options": {
+                                "consumes": [
+                                  "application/json"
+                                ],
+                                "produces": [
+                                  "application/json"
+                                ],
+                                "responses": {
+                                  "200": {
+                                    "description": "200 response",
+                                    "schema": {
+                                      "$ref": "#/definitions/Empty"
+                                    },
+                                    "headers": {
+                                      "Access-Control-Allow-Methods": {
+                                        "type": "string"
+                                      },
+                                      "Access-Control-Allow-Origin": {
+                                        "type": "string"
+                                      },
+                                      "Access-Control-Allow-Headers": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  }
+                                },
+                                "x-amazon-apigateway-integration": {
+                                  "responses": {
+                                    "default": {
+                                      "statusCode": "200",
+                                      "responseParameters": {
+                                        "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
+                                        "method.response.header.Access-Control-Allow-Origin": "'*'",
+                                        "method.response.header.Access-Control-Allow-Headers": "'Authorization,Content-Type,X-Amz-Date,X-Amz-Security-Token,X-Api-Key'"
+                                      }
+                                    }
+                                  },
+                                  "requestTemplates": {
+                                    "application/json": "{\"statusCode\": 200}"
+                                  },
+                                  "passthroughBehavior": "when_no_match",
+                                  "type": "mock",
+                                  "contentHandling": "CONVERT_TO_TEXT"
+                                }
+                              }
+                            },
+                            "/orders/{orderid}": {
+                              "get": {
+                                "consumes": [
+                                  "application/json"
+                                ],
+                                "produces": [
+                                  "application/json"
+                                ],
+                                "responses": {
+                                  "200": {
+                                    "description": "200 response",
+                                    "schema": {
+                                      "$ref": "#/definitions/Empty"
+                                    }
+                                  }
+                                },
+                                "x-amazon-apigateway-integration": {
+                                  "responses": {
+                                    "default": {
+                                      "statusCode": "200"
+                                    }
+                                  },
+                                  "uri": {
+                                    "Fn::Sub": "arn:${AWS::Partition}:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${APIHandler.Arn}/invocations"
+                                  },
+                                  "passthroughBehavior": "when_no_match",
+                                  "httpMethod": "POST",
+                                  "contentHandling": "CONVERT_TO_TEXT",
+                                  "type": "aws_proxy"
+                                },
+                                "parameters": [
+                                  {
+                                    "name": "orderid",
+                                    "in": "path",
+                                    "required": true,
+                                    "type": "string"
+                                  }
+                                ]
+                              },
+                              "options": {
+                                "consumes": [
+                                  "application/json"
+                                ],
+                                "produces": [
+                                  "application/json"
+                                ],
+                                "responses": {
+                                  "200": {
+                                    "description": "200 response",
+                                    "schema": {
+                                      "$ref": "#/definitions/Empty"
+                                    },
+                                    "headers": {
+                                      "Access-Control-Allow-Methods": {
+                                        "type": "string"
+                                      },
+                                      "Access-Control-Allow-Origin": {
+                                        "type": "string"
+                                      },
+                                      "Access-Control-Allow-Headers": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  }
+                                },
+                                "x-amazon-apigateway-integration": {
+                                  "responses": {
+                                    "default": {
+                                      "statusCode": "200",
+                                      "responseParameters": {
+                                        "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
+                                        "method.response.header.Access-Control-Allow-Origin": "'*'",
+                                        "method.response.header.Access-Control-Allow-Headers": "'Authorization,Content-Type,X-Amz-Date,X-Amz-Security-Token,X-Api-Key'"
+                                      }
+                                    }
+                                  },
+                                  "requestTemplates": {
+                                    "application/json": "{\"statusCode\": 200}"
+                                  },
+                                  "passthroughBehavior": "when_no_match",
+                                  "type": "mock",
+                                  "contentHandling": "CONVERT_TO_TEXT"
+                                }
+                              }
+                            },
+                            "/orders/getprice": {
+                              "post": {
+                                "consumes": [
+                                  "application/json"
+                                ],
+                                "produces": [
+                                  "application/json"
+                                ],
+                                "responses": {
+                                  "200": {
+                                    "description": "200 response",
+                                    "schema": {
+                                      "$ref": "#/definitions/Empty"
+                                    }
+                                  }
+                                },
+                                "x-amazon-apigateway-integration": {
+                                  "responses": {
+                                    "default": {
+                                      "statusCode": "200"
+                                    }
+                                  },
+                                  "uri": {
+                                    "Fn::Sub": "arn:${AWS::Partition}:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${APIHandler.Arn}/invocations"
+                                  },
+                                  "passthroughBehavior": "when_no_match",
+                                  "httpMethod": "POST",
+                                  "contentHandling": "CONVERT_TO_TEXT",
+                                  "type": "aws_proxy"
+                                }
+                              },
+                              "options": {
+                                "consumes": [
+                                  "application/json"
+                                ],
+                                "produces": [
+                                  "application/json"
+                                ],
+                                "responses": {
+                                  "200": {
+                                    "description": "200 response",
+                                    "schema": {
+                                      "$ref": "#/definitions/Empty"
+                                    },
+                                    "headers": {
+                                      "Access-Control-Allow-Methods": {
+                                        "type": "string"
+                                      },
+                                      "Access-Control-Allow-Origin": {
+                                        "type": "string"
+                                      },
+                                      "Access-Control-Allow-Headers": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  }
+                                },
+                                "x-amazon-apigateway-integration": {
+                                  "responses": {
+                                    "default": {
+                                      "statusCode": "200",
+                                      "responseParameters": {
+                                        "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
+                                        "method.response.header.Access-Control-Allow-Origin": "'*'",
+                                        "method.response.header.Access-Control-Allow-Headers": "'Authorization,Content-Type,X-Amz-Date,X-Amz-Security-Token,X-Api-Key'"
+                                      }
+                                    }
+                                  },
+                                  "requestTemplates": {
+                                    "application/json": "{\"statusCode\": 200}"
+                                  },
+                                  "passthroughBehavior": "when_no_match",
+                                  "type": "mock",
+                                  "contentHandling": "CONVERT_TO_TEXT"
+                                }
+                              }
+                            },
+                            "/menus": {
+                              "get": {
+                                "consumes": [
+                                  "application/json"
+                                ],
+                                "produces": [
+                                  "application/json"
+                                ],
+                                "responses": {
+                                  "200": {
+                                    "description": "200 response",
+                                    "schema": {
+                                      "$ref": "#/definitions/Empty"
+                                    }
+                                  }
+                                },
+                                "x-amazon-apigateway-integration": {
+                                  "responses": {
+                                    "default": {
+                                      "statusCode": "200"
+                                    }
+                                  },
+                                  "uri": {
+                                    "Fn::Sub": "arn:${AWS::Partition}:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${APIHandler.Arn}/invocations"
+                                  },
+                                  "passthroughBehavior": "when_no_match",
+                                  "httpMethod": "POST",
+                                  "contentHandling": "CONVERT_TO_TEXT",
+                                  "type": "aws_proxy"
+                                }
+                              },
+                              "options": {
+                                "consumes": [
+                                  "application/json"
+                                ],
+                                "produces": [
+                                  "application/json"
+                                ],
+                                "responses": {
+                                  "200": {
+                                    "description": "200 response",
+                                    "schema": {
+                                      "$ref": "#/definitions/Empty"
+                                    },
+                                    "headers": {
+                                      "Access-Control-Allow-Methods": {
+                                        "type": "string"
+                                      },
+                                      "Access-Control-Allow-Origin": {
+                                        "type": "string"
+                                      },
+                                      "Access-Control-Allow-Headers": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  }
+                                },
+                                "x-amazon-apigateway-integration": {
+                                  "responses": {
+                                    "default": {
+                                      "statusCode": "200",
+                                      "responseParameters": {
+                                        "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
+                                        "method.response.header.Access-Control-Allow-Origin": "'*'",
+                                        "method.response.header.Access-Control-Allow-Headers": "'Authorization,Content-Type,X-Amz-Date,X-Amz-Security-Token,X-Api-Key'"
+                                      }
+                                    }
+                                  },
+                                  "requestTemplates": {
+                                    "application/json": "{\"statusCode\": 200}"
+                                  },
+                                  "passthroughBehavior": "when_no_match",
+                                  "type": "mock",
+                                  "contentHandling": "CONVERT_TO_TEXT"
+                                }
+                              }
+                            }
+                          },
+                          "definitions": {
+                            "Empty": {
+                              "type": "object",
+                              "title": "Empty Schema"
+                            }
+                          },
+                          "x-amazon-apigateway-binary-media-types": [
+                            "application/octet-stream",
+                            "application/x-tar",
+                            "application/zip",
+                            "audio/basic",
+                            "audio/ogg",
+                            "audio/mp4",
+                            "audio/mpeg",
+                            "audio/wav",
+                            "audio/webm",
+                            "image/png",
+                            "image/jpg",
+                            "image/jpeg",
+                            "image/gif",
+                            "video/ogg",
+                            "video/mpeg",
+                            "video/webm"
+                          ]
+                        },
+                        "endpointConfiguration": "EDGE",
+                        "stageName": "api"
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "aws-cdk-lib.aws_sam.CfnApi",
+                      "version": "2.110.1"
+                    }
+                  },
+                  "APIHandlerInvokePermission": {
+                    "id": "APIHandlerInvokePermission",
+                    "path": "cdkdemo1/ChaliceApp/ChaliceApp/APIHandlerInvokePermission",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::Lambda::Permission",
+                      "aws:cdk:cloudformation:props": {
+                        "action": "lambda:InvokeFunction",
+                        "functionName": {
+                          "Ref": "APIHandler"
+                        },
+                        "principal": "apigateway.amazonaws.com",
+                        "sourceArn": {
+                          "Fn::Sub": [
+                            "arn:${AWS::Partition}:execute-api:${AWS::Region}:${AWS::AccountId}:${RestAPIId}/*",
+                            {
+                              "RestAPIId": {
+                                "Ref": "RestAPI"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "aws-cdk-lib.aws_lambda.CfnPermission",
+                      "version": "2.110.1"
+                    }
+                  },
+                  "$Hooks": {
+                    "id": "$Hooks",
+                    "path": "cdkdemo1/ChaliceApp/ChaliceApp/$Hooks",
+                    "constructInfo": {
+                      "fqn": "constructs.Construct",
+                      "version": "10.3.0"
+                    }
+                  },
+                  "$Ouputs": {
+                    "id": "$Ouputs",
+                    "path": "cdkdemo1/ChaliceApp/ChaliceApp/$Ouputs",
+                    "children": {
+                      "RestAPIId": {
+                        "id": "RestAPIId",
+                        "path": "cdkdemo1/ChaliceApp/ChaliceApp/$Ouputs/RestAPIId",
+                        "constructInfo": {
+                          "fqn": "aws-cdk-lib.CfnOutput",
+                          "version": "2.110.1"
+                        }
+                      },
+                      "APIHandlerName": {
+                        "id": "APIHandlerName",
+                        "path": "cdkdemo1/ChaliceApp/ChaliceApp/$Ouputs/APIHandlerName",
+                        "constructInfo": {
+                          "fqn": "aws-cdk-lib.CfnOutput",
+                          "version": "2.110.1"
+                        }
+                      },
+                      "APIHandlerArn": {
+                        "id": "APIHandlerArn",
+                        "path": "cdkdemo1/ChaliceApp/ChaliceApp/$Ouputs/APIHandlerArn",
+                        "constructInfo": {
+                          "fqn": "aws-cdk-lib.CfnOutput",
+                          "version": "2.110.1"
+                        }
+                      },
+                      "EndpointURL": {
+                        "id": "EndpointURL",
+                        "path": "cdkdemo1/ChaliceApp/ChaliceApp/$Ouputs/EndpointURL",
+                        "constructInfo": {
+                          "fqn": "aws-cdk-lib.CfnOutput",
+                          "version": "2.110.1"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "constructs.Construct",
+                      "version": "10.3.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.cloudformation_include.CfnInclude",
+                  "version": "2.110.1"
+                }
+              },
+              "DefaultRole": {
+                "id": "DefaultRole",
+                "path": "cdkdemo1/ChaliceApp/DefaultRole",
+                "children": {
+                  "Policy": {
+                    "id": "Policy",
+                    "path": "cdkdemo1/ChaliceApp/DefaultRole/Policy",
+                    "children": {
+                      "Resource": {
+                        "id": "Resource",
+                        "path": "cdkdemo1/ChaliceApp/DefaultRole/Policy/Resource",
+                        "attributes": {
+                          "aws:cdk:cloudformation:type": "AWS::IAM::Policy",
+                          "aws:cdk:cloudformation:props": {
+                            "policyDocument": {
+                              "Statement": [
+                                {
+                                  "Action": [
+                                    "dynamodb:BatchGetItem",
+                                    "dynamodb:GetRecords",
+                                    "dynamodb:GetShardIterator",
+                                    "dynamodb:Query",
+                                    "dynamodb:GetItem",
+                                    "dynamodb:Scan",
+                                    "dynamodb:ConditionCheckItem",
+                                    "dynamodb:BatchWriteItem",
+                                    "dynamodb:PutItem",
+                                    "dynamodb:UpdateItem",
+                                    "dynamodb:DeleteItem",
+                                    "dynamodb:DescribeTable"
+                                  ],
+                                  "Effect": "Allow",
+                                  "Resource": [
+                                    {
+                                      "Fn::GetAtt": [
+                                        "AppTable815C50BC",
+                                        "Arn"
+                                      ]
+                                    },
+                                    {
+                                      "Ref": "AWS::NoValue"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "Action": [
+                                    "dynamodb:BatchGetItem",
+                                    "dynamodb:GetRecords",
+                                    "dynamodb:GetShardIterator",
+                                    "dynamodb:Query",
+                                    "dynamodb:GetItem",
+                                    "dynamodb:Scan",
+                                    "dynamodb:ConditionCheckItem",
+                                    "dynamodb:BatchWriteItem",
+                                    "dynamodb:PutItem",
+                                    "dynamodb:UpdateItem",
+                                    "dynamodb:DeleteItem",
+                                    "dynamodb:DescribeTable"
+                                  ],
+                                  "Effect": "Allow",
+                                  "Resource": [
+                                    {
+                                      "Fn::GetAtt": [
+                                        "OrderTable416EB896",
+                                        "Arn"
+                                      ]
+                                    },
+                                    {
+                                      "Ref": "AWS::NoValue"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "Action": [
+                                    "dynamodb:BatchGetItem",
+                                    "dynamodb:GetRecords",
+                                    "dynamodb:GetShardIterator",
+                                    "dynamodb:Query",
+                                    "dynamodb:GetItem",
+                                    "dynamodb:Scan",
+                                    "dynamodb:ConditionCheckItem",
+                                    "dynamodb:BatchWriteItem",
+                                    "dynamodb:PutItem",
+                                    "dynamodb:UpdateItem",
+                                    "dynamodb:DeleteItem",
+                                    "dynamodb:DescribeTable"
+                                  ],
+                                  "Effect": "Allow",
+                                  "Resource": [
+                                    {
+                                      "Fn::GetAtt": [
+                                        "MenuPriceAll6E92019B",
+                                        "Arn"
+                                      ]
+                                    },
+                                    {
+                                      "Ref": "AWS::NoValue"
+                                    }
+                                  ]
+                                }
+                              ],
+                              "Version": "2012-10-17"
+                            },
+                            "policyName": "ChaliceAppDefaultRolePolicyCAAAC186",
+                            "roles": [
+                              {
+                                "Fn::Select": [
+                                  1,
+                                  {
+                                    "Fn::Split": [
+                                      "/",
+                                      {
+                                        "Fn::Select": [
+                                          5,
+                                          {
+                                            "Fn::Split": [
+                                              ":",
+                                              {
+                                                "Fn::GetAtt": [
+                                                  "DefaultRole",
+                                                  "Arn"
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        "constructInfo": {
+                          "fqn": "aws-cdk-lib.aws_iam.CfnPolicy",
+                          "version": "2.110.1"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "aws-cdk-lib.aws_iam.Policy",
+                      "version": "2.110.1"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.Resource",
+                  "version": "2.110.1"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "constructs.Construct",
+              "version": "10.3.0"
+            }
+          },
+          "CDKMetadata": {
+            "id": "CDKMetadata",
+            "path": "cdkdemo1/CDKMetadata",
+            "children": {
+              "Default": {
+                "id": "Default",
+                "path": "cdkdemo1/CDKMetadata/Default",
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.CfnResource",
+                  "version": "2.110.1"
+                }
+              },
+              "Condition": {
+                "id": "Condition",
+                "path": "cdkdemo1/CDKMetadata/Condition",
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.CfnCondition",
+                  "version": "2.110.1"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "constructs.Construct",
+              "version": "10.3.0"
+            }
+          },
+          "BootstrapVersion": {
+            "id": "BootstrapVersion",
+            "path": "cdkdemo1/BootstrapVersion",
+            "constructInfo": {
+              "fqn": "aws-cdk-lib.CfnParameter",
+              "version": "2.110.1"
+            }
+          },
+          "CheckBootstrapVersion": {
+            "id": "CheckBootstrapVersion",
+            "path": "cdkdemo1/CheckBootstrapVersion",
+            "constructInfo": {
+              "fqn": "aws-cdk-lib.CfnRule",
+              "version": "2.110.1"
+            }
+          }
+        },
+        "constructInfo": {
+          "fqn": "aws-cdk-lib.Stack",
+          "version": "2.110.1"
+        }
+      },
+      "Tree": {
+        "id": "Tree",
+        "path": "Tree",
+        "constructInfo": {
+          "fqn": "constructs.Construct",
+          "version": "10.3.0"
+        }
+      }
+    },
+    "constructInfo": {
+      "fqn": "aws-cdk-lib.App",
+      "version": "2.110.1"
+    }
+  }
+}
